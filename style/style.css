@@ -1,0 +1,235 @@
+/** 4 pages
+main page
+    -What is a wes?
+    -RCMP link/preview
+
+RCMP page -upcoming
+    -download
+    -description
+    -itch.io embed
+    -leaks section
+Battlemaxxing page -upcoming
+    -description
+
+2131 page -upcoming
+    -description
+**/
+
+body {
+    margin:0;
+    padding:0;
+    background-color:rgb(10,0,10);
+    padding-top: 6rem; /* Account for fixed nav */
+    height:2000px
+}
+
+
+nav {
+    width:100%;
+    height: 6rem;
+    background-color:rgb(40,35,40);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav a {
+    display: inline-block;
+    background-color: rgb(60,55,60);
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid rgb(80,75,80);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: rgb(80,75,80);
+    border-color: rgb(100,95,100);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+nav a:active {
+    transform: translateY(0);
+}
+
+nav.nav-hidden {
+    transform: translateY(-100%);
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.preview-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5rem 20rem 10rem 20rem;
+}
+
+.preview-item h2 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.preview-item h2 a {
+    color: rgb(200, 150, 200);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.preview-item h2 a:hover {
+    color: rgb(220, 180, 220);
+    text-decoration: underline;
+}
+
+.preview-item p {
+    margin: 0;
+    color: rgb(150, 150, 150);
+}
+
+.preview-box {
+    border: 2px solid rgb(40,35,40);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.preview-box iframe {
+    width: 100%;
+    height: 50rem;
+    border: none;
+}
+
+.preview-link {
+    display: inline-block;
+    background-color: rgb(80, 75, 80);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid rgb(100, 95, 100);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.preview-link:hover {
+    background-color: rgb(100, 95, 100);
+    border-color: rgb(120, 115, 120);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.preview-link:active {
+    transform: translateY(0);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .preview-container {
+        flex-direction: column;
+    }
+
+    .preview-box iframe {
+        display: none;
+    }
+
+    .preview-item {
+    margin: 1rem 4rem 2rem 4rem;
+    }
+}
+
+.games-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game-box {
+    flex: 1;
+    border: 2px solid rgb(40,35,40);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(40,35,40, 0.5);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game-box h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: rgba(200, 130, 200, 0.6);
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.game-box p {
+    color: #ccc;
+    flex-grow: 1;
+}
+
+.game-box img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.play-link {
+    display: inline-block;
+    background-color: rgb(40,35,40);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.play-link:hover {
+    background-color: rgb(60,55,60);
+}
+
+@media (max-width: 768px) {
+    .games-container {
+        flex-direction: column;
+    }
+}
