@@ -3,7 +3,13 @@ body {
     padding:0;
     background-color:rgb(240,240,220);
     padding-top: 6rem; /* Account for fixed nav */
-    height:2000px
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 5rem;
+    }
 }
 
 .rcmp-container {
@@ -73,4 +79,21 @@ body {
 
 .description p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .rcmp-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .rcmp-container h1 {
+        font-size: 32px;
+    }
+
+    .download-button {
+        align-self: center;
+        width: 100%;
+        max-width: 200px;
+    }
 }
