@@ -6,11 +6,6 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding-top: 5rem;
-    }
-}
 
 .rcmp-container {
     max-width: 800px;
@@ -95,5 +90,9 @@ body {
         align-self: center;
         width: 100%;
         max-width: 200px;
+    }
+    
+    body {
+        padding-top: 5rem;
     }
 }
