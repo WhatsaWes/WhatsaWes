@@ -142,10 +142,25 @@ nav.nav-hidden {
     transform: translateY(0);
 }
 
+.subtitle-box {
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    width: fit-content;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.subtitle-box p {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+}
+
 h1 {
     text-align: center;
     color: white;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 50px;
 }
